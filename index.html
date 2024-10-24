@@ -1,89 +1,492 @@
-<!DOCTYPE html>
-<html lang="en" class="dark">
+<!doctype html>
+<html lang="uk">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/sass.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SASS Tutorial template</title>
-    <script type="module" crossorigin src="/dyke-pole/assets/index-875b9161.js"></script>
+    <title>Дике Поле</title>
+    <!-- Підключення шрифту Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    
+    <script type="module" crossorigin src="/dyke-pole/assets/index-754f1fa7.js"></script>
     <link rel="stylesheet" href="/dyke-pole/assets/index.css">
   </head>
+
   <body>
-    <div class="wrapper">
-      <main class="main">
-        <div class="container">
-          <a
-            class="main-logo"
-            href="https://sass-lang.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+    <header>
+      <div class="container header-container">
+        <div class="logo-container">
+          <div class="logo">
+            <svg width="180" height="180">
+              <use href="../public/images/logo-header.svg#logo-header"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="main-nav-contact-info">
+          <nav class="main-nav">
+            <ul>
+              <li><a href="#">Про нас</a></li>
+              <li><a href="#">Пропонуємо</a></li>
+              <li><a href="#">Галерея</a></li>
+            </ul>
+          </nav>
+          <div class="contact-info">
+            <a href="mailto:ferma-rancho@ukr.net">ferma-rancho@ukr.net</a>
+            <a href="tel:+380632387048">+38 (063) 238-70-48</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="hero-section">
+      <div class="container">
+        <h1 class="hero-title">Пропонуємо</h1>
+        <p>
+          Відпочинок, спокій, природа: наші послуги задовольнять всі ваші
+          потреби
+        </p>
+        <button onclick="" class="button">Замовити Дзвінок</button>
+      </div>
+    </section>
+    <section class="about-section section" id="about-section">
+      <div class="container">
+        <h2
+          class="about-section__title section__title section__title--centered text-uppercase"
+        >
+          Про нас
+        </h2>
+        <p class="about-section__text about-section__content text-centered">
+          Наша оленяча ферма та ранчо — це гармонійний простір, де живуть олені,
+          вівці, муфлони, кози та коні. Ми пропонуємо захоплюючі екскурсії, де
+          ви зможете ближче познайомитися з тваринами та їхніми звичками. Наше
+          ранчо також виробляє екологічно чисті продукти, такі як м’ясо оленини
+          та кіз. Ми дбаємо про збереження популяцій тварин і підтримуємо
+          екологічний баланс. Запрошуємо вас насолодитися унікальним досвідом
+          життя в дикій природі на нашій фермі!
+        </p>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services-section">
+      <div class="container">
+        <h2 class="section__title section__title--centered text-uppercase">
+          Пропонуємо
+        </h2>
+        <ul class="services-list">
+          <li class="services-list-item">
+            <div class="overlay">
+              <picture class="overlay-pictures">
+                <!-- Desktop screen -->
+                <source
+                  media="(min-width: 1158)"
+                  srcset="../public/images/farm-visit.jpg 1x"
+                  type="image/jpg"
+                />
+                <!-- Tablet screen -->
+                <source
+                  media="(min-width: 768px)"
+                  srcset="../public/images/farm-visit-tablet.jpg 1x"
+                />
+                <!-- Mobile screen -->
+                <source
+                  media="(max-width: 767px)"
+                  srcset="../public/images/farm-visit-mobile.jpg 1x"
+                  type="image/jpg"
+                />
+                <img
+                  class="card-img"
+                  src="../public/images/farm-visit-mobile.jpg"
+                  alt="Farm visit"
+                  width="360"
+                  height="300"
+                  loading="lazy"
+                />
+              </picture>
+              <p class="overlay-description">
+                Це чудова можливість відчути себе справжнім фермером і навчитися
+                турбуватися про тварин з любов’ю та увагою ферми.
+              </p>
+            </div>
+            <div class="container-services-progect-description">
+              <h3 class="services-name-progect">Відвідини ферми</h3>
+              <p class="services-progect-description">
+                Навчіться доглядати за тваринами.
+              </p>
+            </div>
+          </li>
+          <li class="services-list-item">
+            <div class="overlay">
+              <picture>
+                <!-- Desktop screen -->
+                <source
+                  media="(min-width: 1158)"
+                  srcset="../public/images/horse-hiking-trips-desktop.jpg 1x"
+                  type="image/jpg"
+                />
+                <!-- Tablet screen -->
+                <source
+                  media="(min-width: 768px)"
+                  srcset="../public/images/horse-hiking-trips-tablet.jpg 1x"
+                />
+                <!-- Mobile screen -->
+                <source
+                  media="(max-width: 767px)"
+                  srcset="../public/images/horse-hiking-trips-mobile.jpg 1x"
+                  type="image/jpg"
+                />
+                <img
+                  class="card-img"
+                  src="../public/images/horse-hiking-trips-mobile.jpg"
+                  alt="Farm visit"
+                  width="360"
+                  height="300"
+                  loading="lazy"
+                />
+              </picture>
+              <p class="overlay-description">
+                Це чудова можливість відчути себе справжнім фермером і навчитися
+                турбуватися про тварин з любов’ю та увагою ферми.
+              </p>
+            </div>
+            <div class="container-services-progect-description">
+              <h3 class="services-name-progect">Кінні та піші прогулянки
+              </h3>
+              <p class="services-progect-description">
+                Навчіться доглядати за тваринами.
+              </p>
+            </div>
+          </li>
+          <li class="services-list-item">
+            <div class="overlay">
+              <picture>
+                <!-- Desktop screen -->
+                <source
+                  media="(min-width: 1158)"
+                  srcset="../public/images/horse-riding-lessons-desktop.jpg 1x"
+                  type="image/jpg"
+                />
+                <!-- Tablet screen -->
+                <source
+                  media="(min-width: 768px)"
+                  srcset="../public/images/horse-riding-lessons-tablet.jpg 1x"
+                />
+                <!-- Mobile screen -->
+                <source
+                  media="(max-width: 767px)"
+                  srcset="../public/images/horse-riding-lessons-mobile.jpg 1x"
+                  type="image/jpg"
+                />
+                <img
+                  class="card-img"
+                  src="../public/images/horse-riding-lessons-mobile.jpg"
+                  alt="Farm visit"
+                  width="360"
+                  height="300"
+                  loading="lazy"
+                />
+              </picture>
+              <p class="overlay-description">
+                Це чудова можливість відчути себе справжнім фермером і навчитися
+                турбуватися про тварин з любов’ю та увагою ферми.
+              </p>
+            </div>
+            <div class="container-services-progect-description">
+              <h3 class="services-name-progect">Навчання верхової їзди
+              </h3>
+              <p class="services-progect-description">
+                Станьте справжнім вершником.
+              </p>
+            </div>
+          </li>
+          <li class="services-list-item">
+            <div class="overlay">
+              <picture>
+                <!-- Desktop screen -->
+                <source
+                  media="(min-width: 1158)"
+                  srcset="../public/images/live-animal-sales-desktop.jpg 1x"
+                  type="image/jpg"
+                />
+                <!-- Tablet screen -->
+                <source
+                  media="(min-width: 768px)"
+                  srcset="../public/images/live-animal-sales-tablet.jpg 1x"
+                />
+                <!-- Mobile screen -->
+                <source
+                  media="(max-width: 767px)"
+                  srcset="../public/images/live-animal-sales-mobile.jpg 1x"
+                  type="image/jpg"
+                />
+                <img
+                  class="card-img"
+                  src="../public/images/live-animal-sales-mobile.jpg"
+                  alt="Farm visit"
+                  width="360"
+                  height="300"
+                  loading="lazy"
+                />
+              </picture>
+              <p class="overlay-description">
+                Це чудова можливість відчути себе справжнім фермером і навчитися
+                турбуватися про тварин з любов’ю та увагою ферми.
+              </p>
+            </div>
+            <div class="container-services-progect-description">
+              <h3 class="services-name-progect">Реалізація живих тварин
+              </h3>
+              <p class="services-progect-description">
+                Отримайте консультації з утримання.
+              </p>
+            </div>
+          </li>
+          <li class="services-list-item">
+            <div class="overlay">
+              <picture>
+                <!-- Desktop screen -->
+                <source
+                  media="(min-width: 1158)"
+                  srcset="../public/images/baled_hay_sales-desktop.jpg 1x"
+                  type="image/jpg"
+                />
+                <!-- Tablet screen -->
+                <source
+                  media="(min-width: 768px)"
+                  srcset="../public/images/baled_hay_sales-tablet.jpg 1x"
+                />
+                <!-- Mobile screen -->
+                <source
+                  media="(max-width: 767px)"
+                  srcset="../public/images/baled_hay_sales-mobile.jpg 1x"
+                  type="image/jpg"
+                />
+                <img
+                  class="card-img"
+                  src="../public/images/baled_hay_sales-mobile.jpg"
+                  alt="Farm visit"
+                  width="360"
+                  height="300"
+                  loading="lazy"
+                />
+              </picture>
+              <p class="overlay-description">
+                Це чудова можливість відчути себе справжнім фермером і навчитися
+                турбуватися про тварин з любов’ю та увагою ферми.
+              </p>
+            </div>
+            <div class="container-services-progect-description">
+              <h3 class="services-name-progect">Продаж сіна в тюках</h3>
+              <p class="services-progect-description">
+                Якісний корм для ваших тварин
+              </p>
+            </div>
+          </li>
+          <li class="services-list-item">
+            <div class="overlay">
+              <picture>
+                <!-- Desktop screen -->
+                <source
+                  media="(min-width: 1158)"
+                  srcset="../public/images/eco-product-tasting-desktop.jpg 1x"
+                  type="image/jpg"
+                />
+                <!-- Tablet screen -->
+                <source
+                  media="(min-width: 768px)"
+                  srcset="../public/images/eco-product-tasting-tablet.jpg 1x"
+                />
+                <!-- Mobile screen -->
+                <source
+                  media="(max-width: 767px)"
+                  srcset="../public/images/eco-product-tasting-mobile.jpg 1x"
+                  type="image/jpg"
+                />
+                <img
+                  class="card-img"
+                  src="../public/images/eco-product-tasting-mobile.jpg"
+                  alt="Farm visit"
+                  width="360"
+                  height="300"
+                  loading="lazy"
+                />
+              </picture>
+              <p class="overlay-description">
+                Це чудова можливість відчути себе справжнім фермером і навчитися
+                турбуватися про тварин з любов’ю та увагою ферми.
+              </p>
+            </div>
+            <div class="container-services-progect-description">
+              <h3 class="services-name-progect">Дегустація еко-продуктів
+              </h3>
+              <p class="services-progect-description">
+                Насолоджуйтесь смаком природи
+              </p>
+            </div>
+          </li>
+        </ul>
+        <!-- Контент про послуги можна додати тут -->
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery-section">
+      <div class="container">
+        <h2
+          class="gallery-section_title section__title section__title--centered text-uppercase"
+        >
+          Галерея
+        </h2>
+        <!-- Галерея контенту можна буде додати тут -->
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section section" id="contact-section">
+      <div class="container">
+        <div class="contact-section__container">
+          <div class="contact-section__form">
+            <h2 class="contact-section__title section__title">
+              Відкрий світ фермерського ранчо!
+            </h2>
+            <p>Заповни форму, щоб ми звʼязались з тобою!</p>
+            <form name="contact-form" autocomplete="off">
+              <div class="contact-section__form-field input">
+                <label
+                  class="input__label visually-hidden"
+                  for="user-name"
+                ></label>
+                <input
+                  class="input__control"
+                  type="text"
+                  id="user-name"
+                  name="user-name"
+                  placeholder="Ім'я"
+                />
+              </div>
+              <div class="contact-section__form-field input">
+                <label
+                  class="input__label visually-hidden"
+                  for="user-tel"
+                ></label>
+                <input
+                  class="input__control"
+                  type="tel"
+                  id="user-tel"
+                  name="user-tel"
+                  placeholder="Телефон"
+                />
+              </div>
+              <div class="contact-section__form-field input">
+                <label
+                  class="input__label visually-hidden"
+                  for="user-email"
+                ></label>
+                <input
+                  class="input__control"
+                  type="email"
+                  id="user-email"
+                  name="user-email"
+                  placeholder="Електронна пошта"
+                />
+              </div>
+              <button class="contact-section__button button" type="submit">
+                Замовити Дзвінок
+              </button>
+              <p class="form-terms">
+                Натискаючи на кнопку я погоджуюсь з
+                <a class="form-terms__link" href="#"
+                  >політикою конфіденційності</a
+                >
+              </p>
+            </form>
+          </div>
+          <iframe
+            class="contact-section__map"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10394.454967639704!2d23.5777729!3d49.3594589!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473a4eff73635287%3A0xb3525000e545f940!2z0J_QvtGH0LDRlNCy0LjRh9GWLCDQm9GM0LLRltCy0YHRjNC60LAg0L7QsdC70LDRgdGC0YwsINCj0LrRgNCw0ZfQvdCwLCA4MjE2Nw!5e0!3m2!1suk!2sus!4v1729539538602!5m2!1suk!2sus"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-container">
+          <div class="logo-footer-container">
             <img
-              class="main-logo-img"
-              src="/src/img/logo-sass.png"
-              alt="Sass logo"
-              width="360"
-              height="360"
+              src="../public/images/logo-footer2.png"
+              alt="Логотип сучасної пекарні"
             />
-          </a>
-
-          <h1 class="main-title title">
-            <span>Sass</span> <br />simple starter
-            <a
-              class="main-title-link"
-              href="https://github.com/goitacademy/vite-sass-app-template"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              template
-            </a>
-          </h1>
-
-          <ul class="main-badges badges">
-            <li class="badges-item">
-              <a class="badges-link" href="https://vitejs.dev/" target="_blank">Vite</a>
-            </li>
-            <li class="badges-item">
-              <a
-                class="badges-link"
-                href="https://elad2412.github.io/the-new-css-reset/"
-                target="_blank"
-                rel="noopener noreferrer"
+          </div>
+          <address class="footer-address-location">
+            <ul class="address-list-location">
+              <li>
+                <p class="footer-text">Дике Поле</p>
+                <a
+                  class="address-link-location"
+                  href="https://maps.app.goo.gl/qSD3gNSYdTT94usz7"
+                  target="_blank"
+                >
+                  Україна, Дрогобицький район, село Почаєвичі, вул.
+                  Михайлівська, 2а
+                </a>
+              </li>
+              <li>
+                <a class="address-link" href="tel:+380960000007">
+                  <svg class="address-icon" width="40" height="40">
+                    <use href="../public/images/icons.svg#icon-phone"></use>
+                  </svg>
+                  +38 (063) 238 70 48
+                </a>
+              </li>
+              <li>
+                <a class="address-link" href="mailto:shopbakery@gmail.com"
+                  ><svg class="address-icon" width="40" height="40">
+                    <use href="../public/images/icons.svg#icon-mail"></use>
+                  </svg>
+                  ferma-rancho@ukr.net
+                </a>
+              </li>
+            </ul>
+          </address>
+          <address class="footer-address">
+            <ul class="address-list__social">
+              <li>
+                <a class="address-link" href="#">
+                  <svg class="address-icon" width="40" height="40">
+                    <use href="../public/images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a class="address-link" href="#">
+                  <svg class="address-icon" width="40" height="40">
+                    <use href="../public/images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+            <!-- <div class="address-info">
+              <a class="address-link" href="#" target="_blank"
+                >Політика конфіденційності</a
               >
-                The New CSS Reset
-              </a>
-            </li>
-            <li class="badges-item">
-              <a
-                class="badges-link"
-                href="https://www.npmjs.com/package/autoprefixer"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Autoprefixer
-              </a>
-            </li>
-            <li class="badges-item">
-              <a
-                class="badges-link"
-                href="https://www.npmjs.com/package/postcss-sort-media-queries"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                postcss-sort-media-queries
-              </a>
-            </li>
-          </ul>
+              <p class="address-copyright">&copy; 2024 Дані захищені</p>
+            </div> -->
+          </address>
         </div>
-      </main>
-      <footer class="footer">
-        <div class="container">
-          Made with ❤ by
-          <a href="https://goit.global/ua/" target="_blank" rel="noopener noreferrer"> GoIT </a>
-        </div>
-      </footer>
-    </div>
-
+      </div>
+    </footer>
+    <div id="app"></div>
     
   </body>
 </html>

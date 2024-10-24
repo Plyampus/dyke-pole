@@ -39,4 +39,5 @@
     fetch(link.href, fetchOpts);
   }
 })();
+const style_min = "";
 const style = "";
