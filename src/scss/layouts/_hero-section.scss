@@ -1,0 +1,42 @@
+
+
+.hero-section {
+  padding: 188px 0;
+  /* max-width: 1440px; */
+  margin: 0 auto;
+  background-color: #2e2f42;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(60, 66, 46, 0.7),
+    rgba(60, 66, 46, 0.7)
+  ),
+    url(/public/images/hero-bg-desktop.jpg);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+}
+
+.hero-title {
+  color: #afb165;
+  text-align: center;
+  font-size: 120px;
+  font-weight: bold;
+  margin: 0 auto;
+  line-height: 1.3;
+  text-transform: uppercase;
+}
+
+.hero-section p {
+  font-size: 45px;
+  line-height: 1.3;
+  margin: 0 auto 40px auto;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #afb165;
+  max-width: 1128px;
+  text-align: center;
+}
+
+.hero-container {
+  padding: 190px 0;
+}

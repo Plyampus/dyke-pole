@@ -1,0 +1,17 @@
+.logo-container {
+  position: absolute;
+  left: 50%;
+  //   top: 50%;
+  transform: translateX(-50%);
+}
+
+.logo-footer-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-footer svg{
+    width: 300px;
+    fill: #FFF4E8;
+}

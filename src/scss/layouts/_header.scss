@@ -1,0 +1,65 @@
+header {
+  height: 220px;
+  background-color: #afb165;
+  /* padding: 20px 0; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  border-bottom: 5px solid #952700;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3); /* Тінь падає вниз */
+  /* overflow: hidden; */
+}
+
+.main-nav {
+  flex: 1; /* Додаємо гнучкість для меню */
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.main-nav ul li a {
+  text-decoration: none;
+  color: #952700;
+  font-size: 18px;
+  letter-spacing: 0.05em;
+  font-weight: regular;
+}
+
+.main-nav ul {
+  flex: 1;
+  list-style: none;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  /* gap: 73px; */
+}
+
+.main-nav-contact-info {
+    gap: 350px;
+  margin: 0 auto;
+  max-width: 1128px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.header-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact-info {
+    flex: 1;
+  display: flex;
+  /* flex-direction: row; */
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact-info a {
+  color: #952700;
+  letter-spacing: 0.01em;
+  text-decoration: none;
+}

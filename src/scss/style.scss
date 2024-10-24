@@ -1,1 +1,22 @@
 @use "reset";
+@use "utils/variables";
+@use "utils/texts";
+@use "utils/utils";
+
+@use "base/base";
+@use "components/buttons";
+@use "components/input";
+@use "components/links";
+@use "components/logo";
+
+
+@use "layouts/about-section";
+@use "layouts/contact-section";
+@use "layouts/container";
+@use "layouts/footer";
+@use "layouts/form-terms";
+@use "layouts/gallery-section";
+@use "layouts/header";
+@use "layouts/hero-section";
+@use "layouts/section";
+@use "layouts/services-section";

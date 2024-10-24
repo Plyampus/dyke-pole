@@ -1,0 +1,104 @@
+.footer {
+  background-color: #4b5320;
+  padding: 67px 0;
+}
+
+.footer-container {
+  display: flex;
+  gap: 120px;
+  //   gap: 70px;
+}
+
+.footer-address {
+  display: flex;
+  flex-basis: 50%;
+  justify-content: flex-end;
+  //   gap: 20px;
+  //   justify-content: flex-end;
+}
+
+.footer-address-location {
+  display: flex;
+}
+
+// .footer-logo,
+.footer-menu {
+  flex-grow: 1;
+}
+
+.footer-text {
+  color: #fff4e8;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  margin: 0 auto 30px auto;
+}
+
+.address-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.address-list {
+  flex-grow: 1;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 25px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+
+  &__social {
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 20px;
+  }
+}
+
+.address-list-location {
+  width: 300px;
+  //   gap: 15px;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+}
+
+.address-link,
+.address-link-location {
+  color: #fff4e8;
+  font-size: 16px;
+  text-decoration: none;
+
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  letter-spacing: 0.1;
+}
+.address-link-location:hover {
+  color: #f66406;
+}
+
+.address-link:hover {
+  color: #f66406;
+}
+
+.address-link-location{
+    letter-spacing: 0.05em;
+}
+.address-icon {
+  fill: #fff4e8;
+}
+
+.address-icon:hover {
+  cursor: pointer;
+  fill: #f66406;
+}
+// .address-icon:hover {
+//   fill: #952700;
+// }
+
+.address-copyright {
+  font-size: 14px;
+  margin-bottom: 0;
+}

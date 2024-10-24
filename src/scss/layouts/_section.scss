@@ -1,0 +1,14 @@
+.section {
+  padding: 48px 0;
+
+  &__title {
+    color: #952700;
+    font-size: 45px;
+    font-weight: bold;
+    line-height: 1.3;
+
+    &--centered {
+      text-align: center;
+    }
+  }
+}

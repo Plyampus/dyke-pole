@@ -1,0 +1,24 @@
+.about-section {
+    padding-top: 96px;
+  
+    &__container {
+      display: flex;
+      justify-content: space-between;
+      gap: 40px;
+    }
+  
+    &__content {
+      max-width: 1128px;
+      margin: 0 auto;
+    }
+  
+    &__title {
+      margin-bottom: 42px;
+    }
+  
+    &__text {
+      &--limited {
+        max-width: 1128px;
+      }
+    }
+  }
