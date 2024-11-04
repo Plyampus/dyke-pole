@@ -1,0 +1,53 @@
+.hero {
+  height: 730px;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url("../../images/hero-bg-desktop.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+
+  // .hero__title
+
+  &__inner{
+    height: 100%;
+    display: grid;
+    align-content: center;
+  }
+
+
+  &__title {
+    font-family: $font_title;
+    font-size: 120px;
+    text-transform: uppercase;
+    color: $c-primary-brand;
+    text-align: center;
+    // margin: 0 auto;
+  }
+
+  // .hero__description
+
+  &__description {
+    font-size: 45px;
+    color: $c-primary-brand;
+    text-align: center;
+    max-width: 1128px;
+    margin: 0 auto;
+    text-transform: uppercase;
+  }
+
+
+}
+
+.hero-description{
+    &__text{
+        margin-bottom: 40px;
+    }
+}
+.container {
+}
+.title {
+}

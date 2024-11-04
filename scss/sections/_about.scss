@@ -1,0 +1,35 @@
+.about {
+    background-color: #fff;
+
+    // .about__inner
+
+    &__inner {
+        padding-top: 120px;
+        padding-bottom: 120px;
+        display: flex;
+        gap:24px;
+    }
+
+    // .about__content
+
+    &__content {
+        width: 552px;
+    }
+
+    // .about__text
+
+    &__text {
+        margin-top: 97px;
+    }
+
+    // .about__images
+
+    &__images {
+        max-width: 100%;
+    }
+
+    // .about__img
+
+    &__img {
+    }
+}

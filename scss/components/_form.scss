@@ -1,0 +1,53 @@
+.form {
+  padding-bottom: 96px;
+  // .form__inner
+
+  &__inner {
+    margin-bottom: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 32px;
+    max-width: 1128px;
+    background-color: transparent;
+  }
+
+  // .form__group
+
+  &__group {
+  }
+
+  // .form__label
+
+  &__label {
+    position: absolute;
+    top: 16px;
+    left: 42px;
+  }
+
+  // .form__input
+
+  &__input {
+    position: relative;
+    padding: 16px 42px;
+    width: 100%;
+    font-size: 16px;
+    line-height: 1.17;
+    border: 1px solid #a18268;
+    border-radius: 8px;
+    background-color: transparent;
+  }
+
+  // .form__btn
+
+  &__btn {
+  }
+}
+.contact-call-request {
+  // .contact-call-request__form
+
+  &__form {
+  }
+}
+.btn {
+}

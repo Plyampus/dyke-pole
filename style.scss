@@ -1,0 +1,26 @@
+// abstract
+@import "./scss/abstract/vars";
+
+// base
+@import "./scss/base/reset";
+@import "./scss/base/fonts";
+@import "./scss/base/global";
+
+// components
+@import "./scss/components/btn";
+@import "./scss/components/form";
+@import "./scss/components/input";
+@import "./scss/components/links";
+
+// layouts
+@import "./scss/layouts/header";
+@import "./scss/layouts/form-terms";
+@import "./scss/layouts/footer";
+
+// sections
+@import "./scss/sections/hero";
+@import "./scss/sections/about";
+@import "./scss/sections/services";
+@import "./scss/sections/contact-section";
+@import "./scss/sections/gallery";
+

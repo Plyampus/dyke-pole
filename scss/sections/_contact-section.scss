@@ -1,0 +1,37 @@
+.contact-section {
+  padding: 120px 0;
+
+  // .contact__content
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    max-width: 1128px;
+  }
+
+  // .contact__form
+
+  &__form-field {
+    margin-bottom: 24px;
+  }
+
+  &__button {
+    display: block;
+    margin: 0 auto 16px;
+  }
+
+  // .contact__title
+
+  &__title {
+    margin-bottom: 16px;
+  }
+
+  // .contact__map
+
+  &__map {
+    flex-shrink: 0;
+    border-radius: 16px;
+    border: none;
+  }
+}

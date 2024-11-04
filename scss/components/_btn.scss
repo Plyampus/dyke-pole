@@ -1,0 +1,19 @@
+.btn{
+    font-size: 16px;
+    // text-transform: uppercase;
+    width: 235px;
+    height: 70px;
+    padding: 27px 23px;
+    color:$c-cloud-background;
+    font-weight: 400;
+    background-color: $c-rustic-amber;
+    border-radius: 10px;
+    border: none;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: #f66406;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
