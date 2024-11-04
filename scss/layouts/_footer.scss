@@ -30,7 +30,7 @@
 }
 
 .address-link-location:hover{
-    color: #f66406;
+    color: $c-primary-brand;
 }
 .footer-contacts {
   gap: 15px;
@@ -52,7 +52,7 @@
   }
 
   &__link:hover{
-    color: #f66406;
+    color: $c-primary-brand;
   }
 }
 .address-icon {
@@ -61,7 +61,7 @@
 }
 
 .address-icon:hover {
-  fill: #f66406;
+  fill: $c-primary-brand;
 }
 .social {
   gap: 15px;

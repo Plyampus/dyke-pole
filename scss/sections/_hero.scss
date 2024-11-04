@@ -10,7 +10,7 @@
   background-size: cover;
   background-position: center bottom;
 
-  &__btn{
+  &__btn {
     text-transform: capitalize;
     padding-left: 50px;
     padding-right: 50px;
@@ -18,12 +18,11 @@
 
   // .hero__title
 
-  &__inner{
+  &__inner {
     height: 100%;
     display: grid;
     align-content: center;
   }
-
 
   &__title {
     font-family: $font_title;
@@ -44,16 +43,22 @@
     margin: 0 auto;
     text-transform: uppercase;
   }
-
-
 }
 
-.hero-description{
-    &__text{
-        margin-bottom: 40px;
-    }
+.hero-description {
+  &__text {
+    margin-bottom: 40px;
+  }
 }
 .container {
 }
 .title {
+}
+
+@media screen and (min-width: 1280px) {
+  .hero {
+    &__description {
+      font-size: 39px;
+    }
+  }
 }

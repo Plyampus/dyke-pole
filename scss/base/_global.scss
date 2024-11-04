@@ -27,7 +27,7 @@ ol {
   margin-bottom: 0;
 }
 
-a{
+a {
   text-decoration: none;
 }
 
@@ -42,8 +42,12 @@ p {
   padding: 0;
 }
 
-img{
+img {
   display: block;
+}
+
+button{
+  cursor: pointer;
 }
 
 .wrapper {
@@ -56,6 +60,8 @@ img{
   width: 100%;
   margin: 0 auto;
 }
+
+
 
 .title {
   color: $c-rustic-amber;
@@ -76,5 +82,11 @@ img{
       height: 3px;
       background-color: currentColor;
     }
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container {
+    max-width: 968px;
   }
 }
