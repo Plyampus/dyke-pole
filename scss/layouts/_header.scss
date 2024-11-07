@@ -46,9 +46,6 @@
 .icon-logo {
   fill: $c-rustic-amber;
 }
-.icon-logo:hover {
-  fill: $c-forest-green;
-}
 
 .contact {
   display: flex;
@@ -63,7 +60,7 @@
   }
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: $bp-desktop) {
   .nav {
     display: flex;
   }
