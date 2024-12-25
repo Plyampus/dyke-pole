@@ -21,8 +21,8 @@ const disableScroll = () =>
 menuBtnOpen.forEach((menuBtn) => menuBtn.addEventListener("click", toggleMenu));
 menuBtnClose.addEventListener("click", toggleMenu);
 
-menuBtnOpen.addEventListener("click", disableScroll);
-menuBtnClose.addEventListener("click", disableScroll);
+// menuBtnOpen.addEventListener("click", disableScroll);
+// menuBtnClose.addEventListener("click", disableScroll);
 
 // menuBtnOpenContacts.addEventListener("click", () => {
 //   mobileMenuContacts.style.display = "block";
