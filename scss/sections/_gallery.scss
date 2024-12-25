@@ -12,6 +12,7 @@
     overflow: hidden;
     font-size: 0;
     margin-top: 120px;
+    justify-content: center;
   }
 
 //   .gallery__item
@@ -57,13 +58,13 @@
   }
 }
 
-@media(max-width: 991px){
-    .gallery{
-        &__item{
-            flex:25%;
-        }
-    }
-}
+// @media(max-width: 991px){
+//     .gallery{
+//         &__item{
+//             flex:25%;
+//         }
+//     }
+// }
 
 @media(max-width: 768px){
     .gallery{
@@ -73,13 +74,13 @@
     }
 }
 
-@media(max-width: 530px){
-    .gallery{
-        &__item{
-            flex:100%;
-        }
-    }
-}
+// @media(max-width: 530px){
+//     .gallery{
+//         &__item{
+//             flex:100%;
+//         }
+//     }
+// }
 
 .container {
 }

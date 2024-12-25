@@ -15,8 +15,15 @@
       <header class="header">
         <div class="container">
           <div class="menu-container">
-            <button class="menu-container__btn">
-              <svg class="menu-icon" width="58" height="35">
+            <button class="menu-container__btn menu-btn-open">
+              <svg class="menu-icon" width="35" height="35">
+                <use
+                  href="./images/icons/icons.svg#icon-burger-menu-mobile"
+                ></use>
+              </svg>
+            </button>
+            <button class="menu-container__btn menu-btn-open">
+              <svg class="menu-icon" width="54" height="32">
                 <use href="./images/icons/icons.svg#icon-menu"></use>
               </svg>
               <span class="menu-icon__text">Меню</span>
@@ -28,29 +35,38 @@
             </a>
             <ul class="menu-social__list">
               <li class="menu-social__item">
+                <button class="menu-container__btn menu-btn-open-contacts">
+                  <svg class="menu-social__icon" width="35" height="35">
+                    <use
+                      href="./images/icons/icons.svg#icon-contacts-icon"
+                    ></use>
+                  </svg>
+                </button>
+              </li>
+              <li class="menu-social__item">
                 <a href="" class="menu-social__link">
-                  <svg class="menu-social__icon" width="40" height="40">
+                  <svg class="menu-social__icon" width="35" height="35">
                     <use href="./images/icons/icons.svg#icon-phone"></use>
                   </svg>
                 </a>
               </li>
               <li class="menu-social__item">
                 <a href="" class="menu-social__link">
-                  <svg class="menu-social__icon" width="40" height="40">
+                  <svg class="menu-social__icon" width="35" height="35">
                     <use href="./images/icons/icons.svg#icon-mail"></use>
                   </svg>
                 </a>
               </li>
               <li class="menu-social__item">
                 <a href="" class="menu-social__link">
-                  <svg class="menu-social__icon" width="40" height="40">
+                  <svg class="menu-social__icon" width="35" height="35">
                     <use href="./images/icons/icons.svg#icon-facebook"></use>
                   </svg>
                 </a>
               </li>
               <li class="menu-social__item">
                 <a href="" class="menu-social__link">
-                  <svg class="menu-social__icon" width="40" height="40">
+                  <svg class="menu-social__icon" width="35" height="35">
                     <use href="./images/icons/icons.svg#icon-instagram"></use>
                   </svg>
                 </a>
@@ -63,7 +79,7 @@
                 <a href="#about" class="menu__link">Про нас</a>
               </li>
               <li class="menu__item">
-                <a href="#services" class="menu__link">Пропонуємо</a>
+                <a href="#services" class="menu__link">Про життя</a>
               </li>
               <li class="menu__item">
                 <a href="#gallery" class="menu__link">Галерея</a>
@@ -83,21 +99,102 @@
               >
             </div>
           </nav>
+
+          <!-- Mobile Menu -->
+          <div class="mobile-menu">
+            <button class="mobile-menu__btn-close menu-btn-close" type="button">
+              <svg width="24" height="24">
+                <use href="./images/icons/icons.svg#icon-btn-close"></use>
+              </svg>
+            </button>
+            <ul class="mobile-menu__list">
+              <li>
+                <a class="mobile-menu__link mobile-menu-link" href="#about"> Про нас </a>
+              </li>
+              <li>
+                <a class="mobile-menu__link mobile-menu-link" href="#gallery"> Галерея </a>
+              </li>
+              <li>
+                <a class="mobile-menu__link mobile-menu-link" href="#services">Про життя</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Mobile Menu Contacts -->
+          <div class="mobile-menu-contacts">
+            <button
+              class="mobile-menu-contacts__btn-close menu-btn-close-contacts"
+              type="button"
+            >
+              <svg width="24" height="24">
+                <use href="./images/icons/icons.svg#icon-btn-close"></use>
+              </svg>
+            </button>
+            <div class="mobile-menu-contacts__wrapper">
+              <div class="mobile-menu-contacts__text-container">
+                <h3 class="mobile-menu-contacts__title">Дике Поле</h3>
+
+                <a
+                  class="mobile-menu-contacts__text"
+                  href="https://maps.app.goo.gl/qSD3gNSYdTT94usz7"
+                  target="_blank"
+                >
+                  Україна, <br />
+                  Дрогобицький район, <br />
+                  село Почаєвичі, <br />
+                  вул. Михайлівська, 2а
+                </a>
+              </div>
+              <ul class="mobile-menu-social__list">
+                <li class="menu-social__item">
+                  <a href="" class="menu-social__link">
+                    <svg class="menu-social__icon" width="35" height="35">
+                      <use href="./images/icons/icons.svg#icon-phone"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="menu-social__item">
+                  <a href="" class="menu-social__link">
+                    <svg class="menu-social__icon" width="35" height="35">
+                      <use href="./images/icons/icons.svg#icon-mail"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="menu-social__item">
+                  <a href="" class="menu-social__link">
+                    <svg class="menu-social__icon" width="35" height="35">
+                      <use href="./images/icons/icons.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="menu-social__item">
+                  <a href="" class="menu-social__link">
+                    <svg class="menu-social__icon" width="35" height="35">
+                      <use href="./images/icons/icons.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </header>
       <main>
         <!-- Hero Section -->
         <section class="hero">
           <div class="container hero__inner">
-            <h1 class="title--lines hero__title">Пропонує</h1>
+            <!-- <h1 class="title--lines hero__title">Пропонує</h1> -->
             <div class="hero__description">
-              <p class="hero-description__text">
+              <button class="contact-section__button btn modal-btn-open" type="button">
+                    Замовити Дзвінок
+                  </button>
+              <!-- <p class="hero-description__text">
                 Відпочинок, спокій, природа: наші послуги задовольнять всі ваші
                 потреби.
-              </p>
-              <a href="#contact" onclick="" class="hero__btn btn"
+              </p> -->
+              <!-- <a href="#contact" onclick="" class="hero__btn btn"
                 >Замовити Дзвінок</a
-              >
+              > -->
             </div>
           </div>
         </section>
@@ -138,7 +235,7 @@
         <!-- Services Section -->
         <section class="services" id="services">
           <div class="container">
-            <h2 class="title title--lines">Пропонуємо</h2>
+            <h2 class="title title--lines">Про життя</h2>
             <ul class="services-list">
               <li class="services-list-item">
                 <div class="overlay">
@@ -640,6 +737,73 @@
           </ul>
         </div>
       </footer>
+    </div>
+
+    <!-- Modal -->
+    <div class="backdrop is-hidden">
+      <div class="modal">
+        <button class="modal__btn-close modal-btn-close" type="button">
+          <svg width="24" height="24">
+            <use href="./images/icons/icons.svg#icon-btn-close"></use>
+          </svg>
+        </button>
+        <h2 class="modal__title">Відкрий світ Фермерського Ранчо!</h2>
+        <p class="modal__text">
+          Залишіть заявку та наш спеціаліст зв'яжеться з Вами!
+        </p>
+        <form name="modal-form" autocomplete="off">
+          <div class="modal__form-field input">
+            <!-- <label class="input__label visually-hidden" for="user-name">
+              Імʼя
+            </label> -->
+            <input
+              class="input__control"
+              type="text"
+              name="user-name"
+              id="user-name"
+              placeholder="Імʼя"
+              required
+            />
+          </div>
+
+          <div class="modal__form-field input">
+            <!-- <label class="input__label visually-hidden" for="user-tel">
+              Телефон
+            </label> -->
+            <input
+              class="input__control"
+              type="tel"
+              name="user-tel"
+              id="user-tel"
+              placeholder="Телефон"
+              pattern="^\+[0-9]{12}"
+              required
+            />
+          </div>
+
+          <div class="modal__form-field input">
+            <!-- <label class="input__label visually-hidden" for="user-email">
+              Електронна пошта
+            </label> -->
+            <input
+              class="input__control"
+              type="email"
+              name="user-email"
+              id="user-email"
+              placeholder="Електронна пошта"
+              required
+            />
+          </div>
+
+          <button class="modal__button btn" type="submit">
+            Замовити дзвінок
+          </button>
+          <p class="form-terms">
+            Натискаючи на кнопку я погоджуюсь з
+            <a class="form-terms__link" href="#">політикою конфіденційності</a>
+          </p>
+        </form>
+      </div>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.14.3/simple-lightbox.min.js"></script>
