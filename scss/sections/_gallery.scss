@@ -1,5 +1,5 @@
 .gallery {
-    background-color: #ffffff;
+  background-color: #ffffff;
   position: relative;
   padding: 120px 0;
 
@@ -15,7 +15,7 @@
     justify-content: center;
   }
 
-//   .gallery__item
+  //   .gallery__item
 
   &__item {
     position: relative;
@@ -25,8 +25,8 @@
     img {
       max-width: 100%;
       object-fit: cover;
-    //   height: auto;
-      transition: all .5s ease;
+      //   height: auto;
+      transition: all 0.5s ease;
     }
   }
 
@@ -66,12 +66,17 @@
 //     }
 // }
 
-@media(max-width: 768px){
-    .gallery{
-        &__item{
-            flex:50%;
-        }
+@media (max-width: $bp-tablet-one) {
+  .gallery {
+    &__item {
+      flex: 50%;
     }
+    
+    &__list {
+      max-width: 280px;
+      margin: 0 auto;
+    }
+  }
 }
 
 // @media(max-width: 530px){

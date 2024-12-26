@@ -4,6 +4,7 @@
   // .contact__content
 
   &__container {
+    flex-direction: row;
     display: flex;
     justify-content: space-between;
     gap: 24px;
@@ -30,8 +31,37 @@
   // .contact__map
 
   &__map {
-    flex-shrink: 0;
+    width: 100%;
+    flex-shrink: 1;
     border-radius: 16px;
     border: none;
+  }
+}
+
+@media screen and (max-width: $bp-tablet-one) {
+  .contact-section {
+    &__container {
+      flex-direction: column;
+      width: 280px;
+      margin: 0 auto;
+    }
+  }
+}
+
+@media screen and (min-width: $bp-tablet) {
+  .contact-section {
+    &__container {
+      flex-direction: row;
+    }
+  }
+}
+
+@media screen and (max-width: $bp-mobile) {
+  .contact-section {
+    &__container {
+      flex-direction: column;
+      width: 280px;
+      margin: 0 auto;
+    }
   }
 }

@@ -29,8 +29,8 @@
   color: $c-cloud-background;
 }
 
-.address-link-location:hover{
-    color: $c-primary-brand;
+.address-link-location:hover {
+  color: $c-primary-brand;
 }
 .footer-contacts {
   gap: 15px;
@@ -51,7 +51,7 @@
     color: $c-cloud-background;
   }
 
-  &__link:hover{
+  &__link:hover {
     color: $c-primary-brand;
   }
 }
@@ -78,5 +78,55 @@
   // .social__link
 
   &__link {
+  }
+}
+
+@media screen and (min-width: $bp-tablet) {
+  .footer {
+    // text-align: center;
+
+    &__icon-logo {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: $bp-tablet) {
+  .footer {
+padding: 70px 0;
+
+    &__text-container {
+      margin-bottom: 130px;
+    }
+
+    &__container {
+      display: block;
+      text-align: center;
+    }
+
+    &__icon-logo {
+      margin-bottom: 50px;
+      fill: $c-cloud-background;
+    }
+  }
+
+  .footer-contacts {
+    display: inline-flex;
+    flex-direction: row;
+    margin-right: 12px;
+    &__text {
+      display: none;
+    }
+  }
+
+  .social {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    &__link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
   }
 }

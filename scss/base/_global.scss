@@ -46,7 +46,7 @@ img {
   display: block;
 }
 
-button{
+button {
   cursor: pointer;
 }
 
@@ -60,8 +60,6 @@ button{
   width: 100%;
   margin: 0 auto;
 }
-
-
 
 .title {
   color: $c-rustic-amber;
@@ -91,3 +89,16 @@ button{
   }
 }
 
+@media screen and (max-width: $bp-tablet) {
+  .title {
+    font-size: 24px;
+    text-align: center;
+
+    &--lines {
+       &::before,
+    &::after {
+      display: none;
+    }
+    }
+  }
+}
