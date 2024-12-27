@@ -62,6 +62,7 @@ button {
 }
 
 .title {
+  margin-bottom: 120px;
   color: $c-rustic-amber;
   font-family: $font_title;
   font-size: 45px;
@@ -93,12 +94,13 @@ button {
   .title {
     font-size: 24px;
     text-align: center;
+    margin-bottom: 60px;
 
     &--lines {
-       &::before,
-    &::after {
-      display: none;
-    }
+      &::before,
+      &::after {
+        display: none;
+      }
     }
   }
 }

@@ -25,7 +25,11 @@
   // .contact__title
 
   &__title {
-    margin-bottom: 16px;
+    margin-bottom: 40px;
+  }
+
+  &__text {
+    color: $c-rustic-amber;
   }
 
   // .contact__map
@@ -45,6 +49,11 @@
       width: 280px;
       margin: 0 auto;
     }
+
+    &__text {
+      text-align: center;
+      margin-bottom: 55px;
+    }
   }
 }
 
@@ -52,6 +61,13 @@
   .contact-section {
     &__container {
       flex-direction: row;
+    }
+    &__title {
+      // margin-bottom: 40px;
+    }
+
+    &__text {
+      // text-align: center;
     }
   }
 }
@@ -62,6 +78,10 @@
       flex-direction: column;
       width: 280px;
       margin: 0 auto;
+    }
+    &__text {
+      text-align: center;
+      margin-bottom: 55px;
     }
   }
 }
