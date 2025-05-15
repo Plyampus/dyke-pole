@@ -712,11 +712,60 @@ button {
 .about {
   background-color: #fff;
 }
+.about__inner {
+  max-width: 704px;
+  margin: 0 auto;
+  padding: 120px 0;
+  display: flex;
+  gap: 24px;
+}
+@media screen and (max-width: 767px) {
+  .about__inner {
+    max-width: 288px;
+    padding: 120px 0;
+    gap: 0;
+  }
+}
+@media screen and (min-width: 1158px) {
+  .about__inner {
+    max-width: 1158px;
+  }
+}
+.about__images {
+  flex: 0 0 356px;
+  background-image: url("../../images/about.webp");
+  background-size: cover;
+  background-position: top;
+  min-height: 100%;
+}
+@media screen and (max-width: 767px) {
+  .about__images {
+    display: none;
+  }
+}
+@media screen and (min-width: 1158px) {
+  .about__images {
+    flex: 0 0 567px;
+  }
+}
+.about__content {
+  flex: 1 1 0;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+@media screen and (max-width: 767px) {
+  .about__content {
+    max-width: 288px;
+    margin: 0 auto;
+  }
+}
 .about__title {
   margin-top: 0; /* Важливо: прибрати верхній відступ заголовка */
   padding-top: 0;
-  font-size: 30px;
   margin-bottom: 40px;
+  font-size: 30px;
   overflow-wrap: break-word;
   word-break: break-word;
 }
@@ -725,45 +774,14 @@ button {
     font-size: 24px;
   }
 }
-.about__inner {
-  max-width: 704px;
-  margin: 0 auto;
-  padding-top: 120px;
-  padding-bottom: 120px;
-  display: flex;
-  gap: 24px;
-}
-@media screen and (max-width: 767px) {
-  .about__inner {
-    gap: 0;
-  }
-}
-.about__content {
-  flex: 1 1 0;
-  min-width: 0;
-  display: flex;
-  flex-direction: column;
-}
-@media screen and (max-width: 767px) {
-  .about__content {
-    width: 280px;
-    margin: 0 auto;
+@media screen and (min-width: 1158px) {
+  .about__title {
+    font-size: 45px;
   }
 }
 .about__text {
   margin-top: 10px;
-}
-.about__text--accent {
-  color: #952700;
-  font-weight: 700;
-}
-.about__images {
-  flex: 0 0 356px;
-  background-image: url("../../images/about.webp");
-  background-size: cover;
-  background-position: center;
-  min-height: 100%;
-  /* Щоб блок зростав по висоті тексту */
+  line-height: 1.5;
 }
 .about__img {
   width: 100%;
