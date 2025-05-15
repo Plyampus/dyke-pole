@@ -733,7 +733,7 @@ button {
 }
 .about__images {
   flex: 0 0 356px;
-  background-image: url("../images/about.webp");
+  background-image: url("/dyke-pole/images/about.webp");
   background-size: cover;
   background-position: top;
   min-height: 100%;

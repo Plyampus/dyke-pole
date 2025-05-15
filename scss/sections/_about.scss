@@ -26,7 +26,7 @@
 
   &__images {
     flex: 0 0 356px; // або інша ширина, яка підходить під макет
-    background-image: url("../images/about.webp");
+    background-image: url("/dyke-pole/images/about.webp");
     background-size: cover;
     background-position: top;
     min-height: 100%; // Забезпечує повну висоту відносно сусіднього блоку
