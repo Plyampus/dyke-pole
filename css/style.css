@@ -802,7 +802,7 @@ button {
 @media screen and (max-width: 767px) {
   /* MOBILE SERVICES STYLES */
   .services {
-    padding-top: 40px;
+    padding: 60px 0;
   }
   .services-section {
     background-color: #fff4e8;
@@ -907,7 +907,7 @@ button {
   }
   /* TABLET SERVICES STYLES */
   .services {
-    padding-top: 120px;
+    padding: 120px 0;
   }
   .services-section {
     background-color: #fff4e8;
@@ -990,7 +990,6 @@ button {
     padding: 120px 0 120px 0;
   }
   .services-list {
-    padding-bottom: 120px;
     width: 1128px;
   }
   .services-list-item {
@@ -1116,6 +1115,11 @@ button {
   background-color: #ffffff;
   position: relative;
   padding: 120px 0;
+}
+@media (max-width: 767px) {
+  .gallery {
+    padding: 60px 0;
+  }
 }
 .gallery__list {
   position: relative;

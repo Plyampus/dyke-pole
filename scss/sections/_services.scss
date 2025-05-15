@@ -14,7 +14,7 @@
 @media screen and (max-width: $bp-tablet) {
   /* MOBILE SERVICES STYLES */
   .services {
-    padding-top: 40px;
+    padding: 60px 0;
   }
 
   .services-section {
@@ -146,7 +146,7 @@
 
   /* TABLET SERVICES STYLES */
   .services {
-    padding-top: 120px;
+    padding: 120px 0;
   }
 
   .services-section {
@@ -251,7 +251,7 @@
   }
 
   .services-list {
-    padding-bottom: 120px;
+    // padding-bottom: 120px;
     // padding-top: 120px;
     width: 1128px;
   }
