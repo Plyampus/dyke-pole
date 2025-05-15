@@ -6,7 +6,7 @@
   align-items: center;
   justify-content: center;
   background: linear-gradient(135deg, $main-bg 0%, #e0e7ff 100%);
-  font-family: "Montserrat", Arial, sans-serif;
+  font-family: $font_title;
 
   .thankyou-container {
     background: #fff;

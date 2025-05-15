@@ -1176,7 +1176,7 @@ button {
   align-items: center;
   justify-content: center;
   background: linear-gradient(135deg, #f8fafc 0%, #e0e7ff 100%);
-  font-family: "Montserrat", Arial, sans-serif;
+  font-family: "IBM Plex Serif", serif;
 }
 .thankyou-page .thankyou-container {
   background: #fff;
