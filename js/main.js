@@ -60,3 +60,47 @@ modalBtnClose.addEventListener("click", () => {
   backdrop.classList.remove("is-visible");
   document.body.style.overflow = "visible";
 });
+
+// Обробка форми зворотного дзвінка
+const contactForm = document.querySelector('form[name="contact-form"]');
+
+if (contactForm) {
+  contactForm.addEventListener('submit', function(event) {
+    event.preventDefault();
+    
+    const formData = new FormData(this);
+    const userName = formData.get('user-name');
+    const userTel = formData.get('user-tel');
+    const userEmail = formData.get('user-email');
+    
+    // Валідація (проста перевірка)
+    if (!userName || !userTel || !userEmail) {
+      alert('Будь ласка, заповніть усі поля форми');
+      return;
+    }
+    
+    // Відправка на сервіс форм (наприклад, FormBackend)
+    fetch('https://formbackend.com/f/ваш_унікальний_id', {
+      method: 'POST',
+      body: formData,
+      headers: {
+        'Accept': 'application/json'
+      }
+    })
+    .then(response => {
+      if (!response.ok) {
+        throw new Error('Помилка при відправці форми');
+      }
+      return response.json();
+    })
+    .then(data => {
+      // Успішна відправка
+      alert('Дякуємо! Ми зв\'яжемося з вами найближчим часом.');
+      contactForm.reset();
+    })
+    .catch(error => {
+      console.error('Помилка:', error);
+      alert('Щось пішло не так. Спробуйте пізніше або зв\'яжіться з нами за телефоном.');
+    });
+  });
+}

@@ -627,55 +627,52 @@
                 <p class="contact-section__text">
                   Заповни форму, щоб ми звʼязались з тобою!
                 </p>
-                <form name="contact-form">
+                <form
+                  action="/thank-you.html"
+                  name="contact"
+                  method="POST"
+                  data-netlify="true"
+                  netlify-honeypot="bot-field"
+                >
+                  <input type="hidden" name="form-name" value="dyke-pole-contacts" />
+
                   <div class="contact-section__form-field input">
-                    <label
-                      class="input__label visually-hidden"
-                      for="user-name"
-                    ></label>
                     <input
                       class="input__control"
                       type="text"
                       id="user-name"
                       name="user-name"
                       placeholder="Ім'я"
+                      required
                     />
                   </div>
                   <div class="contact-section__form-field input">
-                    <label
-                      class="input__label visually-hidden"
-                      for="user-tel"
-                    ></label>
                     <input
                       class="input__control"
                       type="tel"
                       id="user-tel"
                       name="user-tel"
                       placeholder="Телефон"
+                      required
                     />
                   </div>
                   <div class="contact-section__form-field input">
-                    <label
-                      class="input__label visually-hidden"
-                      for="user-email"
-                    ></label>
                     <input
                       class="input__control"
                       type="email"
                       id="user-email"
                       name="user-email"
                       placeholder="Електронна пошта"
+                      required
                     />
+                  </div>
+                  <!-- Honeypot field для захисту від спаму -->
+                  <div style="display: none">
+                    <input name="bot-field" />
                   </div>
                   <button class="contact-section__button btn" type="submit">
                     Замовити Дзвінок
                   </button>
-                  <p class="form-terms">
-                    Натискаючи на кнопку я погоджуюсь з
-                    <a class="form-terms__link" href="#"
-                      >політикою конфіденційності</a
-                    >
-                  </p>
                 </form>
               </div>
               <iframe
