@@ -2,6 +2,12 @@
   background-color: #fff;
 
   &__title {
+    margin-top: 0; /* Важливо: прибрати верхній відступ заголовка */
+    padding-top: 0;
+    font-size: 30px;
+    margin-bottom: 40px;
+    overflow-wrap: break-word;
+    word-break: break-word;
     // max-width: 390px;
     @media screen and (max-width: $bp-tablet) {
       font-size: 24px;
@@ -13,10 +19,13 @@
   // .about__inner
 
   &__inner {
+    max-width: 704px;
+    margin: 0 auto;
     padding-top: 120px;
     padding-bottom: 120px;
     display: flex;
     gap: 24px;
+    // align-items: flex-start; /* Ключова властивість: вирівнювання елементів по верхньому краю */
 
     @media screen and (max-width: $bp-tablet) {
       gap: 0;
@@ -26,6 +35,12 @@
   // .about__content
 
   &__content {
+    flex: 1 1 0;
+    min-width: 0; // дозволяє тексту переноситися
+    // max-width: 390px; // або інша потрібна ширина
+    display: flex;
+    flex-direction: column;
+    // justify-content: flex-start;
     // width: 552px;
 
     @media screen and (max-width: $bp-tablet) {
@@ -49,12 +64,22 @@
   // .about__images
 
   &__images {
-    max-width: 100%;
+    flex: 0 0 356px; // або інша ширина, яка підходить під макет
+    background-image: url("../../images/about.webp");
+    background-size: cover;
+    background-position: center;
+    min-height: 100%; // Забезпечує повну висоту відносно сусіднього блоку
+    // border-radius: 8px;
+    /* Щоб блок зростав по висоті тексту */
   }
 
   // .about__img
 
   &__img {
+    width: 100%;
+    height: auto;
+    display: block;
+    // border-radius: 8px;
     @media screen and (max-width: $bp-tablet) {
       display: none;
     }
