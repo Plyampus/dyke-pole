@@ -1176,14 +1176,14 @@ button {
   align-items: center;
   justify-content: center;
   background: linear-gradient(135deg, #f8fafc 0%, #e0e7ff 100%);
-  font-family: "Montserrat", Arial, sans-serif;
+  font-family: "IBM Plex Serif", serif;
 }
 .thankyou-page .thankyou-container {
   background: #fff;
   border-radius: 16px;
   box-shadow: 0 4px 24px rgba(0, 0, 0, 0.09);
   padding: 48px 32px 40px 32px;
-  max-width: 420px;
+  max-width: 500px;
   width: 100%;
   text-align: center;
   display: flex;
