@@ -1,0 +1,21 @@
+backend:
+  name: git-gateway
+  branch: main # або master, залежно від того, яка у вас основна гілка
+
+media_folder: "images/gallery" # куди зберігати завантажені фото
+public_folder: "/images/gallery" # шлях для відображення на сайті
+
+collections:
+  - name: "gallery"
+    label: "Галерея"
+    files:
+      - label: "Фотогалерея"
+        name: "photogallery"
+        file: "_data/gallery.json" # створимо JSON файл для зберігання даних галереї
+        fields:
+          - label: "Зображення"
+            name: "images"
+            widget: "list"
+            fields:
+              - {label: "Фото", name: "image", widget: "image"}
+              - {label: "Опис", name: "alt", widget: "string", required: false}

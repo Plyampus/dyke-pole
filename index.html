@@ -8,6 +8,13 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.14.3/simple-lightbox.min.css"
     />
+    <!-- Ваші поточні мета-теги та стилі -->
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/simplelightbox@2.10.3/dist/simple-lightbox.min.css"
+    />
+
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
@@ -327,8 +334,9 @@
                     />
                   </picture>
                   <p class="overlay-description">
-                    Поспостерігайте за оленями, муфлонами, козами, кіньми та ламами під час прогулянок. 
-                    Візьміть участь у догляді за тваринами та відчуйте себе справжнім фермером.
+                    Поспостерігайте за оленями, муфлонами, козами, кіньми та
+                    ламами під час прогулянок. Візьміть участь у догляді за
+                    тваринами та відчуйте себе справжнім фермером.
                   </p>
                 </div>
                 <div class="container-services-progect-description">
@@ -370,8 +378,9 @@
                     />
                   </picture>
                   <p class="overlay-description">
-                    Спробуйте навчання верхової їзди з досвідченими інструкторами. 
-                    Відчуйте себе справжнім вершником серед природи ранчо!
+                    Спробуйте навчання верхової їзди з досвідченими
+                    інструкторами. Відчуйте себе справжнім вершником серед
+                    природи ранчо!
                   </p>
                 </div>
                 <div class="container-services-progect-description">
@@ -411,8 +420,9 @@
                     />
                   </picture>
                   <p class="overlay-description">
-                    Реалізуємо живих тварин з консультаціями щодо правильного утримання. 
-                    Пояснюємо, як забезпечити догляд, харчування та комфорт для нових мешканців.
+                    Реалізуємо живих тварин з консультаціями щодо правильного
+                    утримання. Пояснюємо, як забезпечити догляд, харчування та
+                    комфорт для нових мешканців.
                   </p>
                 </div>
                 <div class="container-services-progect-description">
@@ -452,8 +462,9 @@
                     />
                   </picture>
                   <p class="overlay-description">
-                    Пропонуємо якісне сіно в тюках для ваших тварин. 
-                    Гарантуємо свіжість і поживність корму для здоров’я вашого господарства.
+                    Пропонуємо якісне сіно в тюках для ваших тварин. Гарантуємо
+                    свіжість і поживність корму для здоров’я вашого
+                    господарства.
                   </p>
                 </div>
                 <div class="container-services-progect-description">
@@ -493,8 +504,9 @@
                     />
                   </picture>
                   <p class="overlay-description">
-                    Запрошуємо на дегустацію натуральних еко-продуктів з нашого ранчо. 
-                    Відкрийте для себе справжній смак природи у кожному шматочку!
+                    Запрошуємо на дегустацію натуральних еко-продуктів з нашого
+                    ранчо. Відкрийте для себе справжній смак природи у кожному
+                    шматочку!
                   </p>
                 </div>
                 <div class="container-services-progect-description">
@@ -511,107 +523,47 @@
         </section>
 
         <!-- Gallery Section -->
+        <!-- Gallery Section -->
         <section class="gallery" id="gallery">
           <div class="container">
             <h2 class="title title--lines">Галерея</h2>
             <ul class="gallery__list">
-              <li>
-                <a href="./images/hero-bg-desktop.webp" class="gallery__item">
-                  <div class="gallery__hover">Переглянути</div>
-                  <img
-                    src="./images/hero-bg-desktop.webp"
-                    width="282"
-                    height="282"
-                    alt="photo"
-                  />
-                </a>
-              </li>
-              <li>
-                <a href="./images/people.jpg" class="gallery__item">
-                  <div class="gallery__hover">Переглянути</div>
-                  <img
-                    src="./images/people.jpg"
-                    width="282"
-                    height="282"
-                    alt="photo"
-                  />
-                </a>
-              </li>
+              {# Виводимо тільки перші 8 фото видимими #} {% for image in
+              gallery.images | slice(0,8) %}
               <li>
                 <a
-                  href="./images/baled_hay_sales-desktop.jpg"
+                  href="{{ image.image }}"
                   class="gallery__item"
+                  data-lightbox="gallery"
                 >
                   <div class="gallery__hover">Переглянути</div>
                   <img
-                    src="./images/baled_hay_sales-desktop.jpg"
+                    src="{{ image.image }}"
                     width="282"
                     height="282"
-                    alt="photo"
+                    alt="{{ image.alt | default: 'photo' }}"
                   />
                 </a>
               </li>
-              <li>
-                <a href="./images/farm1.jpg" class="gallery__item">
-                  <div class="gallery__hover">Переглянути</div>
-                  <img
-                    src="./images/farm1.jpg"
-                    width="282"
-                    height="282"
-                    alt="photo"
-                  />
-                </a>
-              </li>
-              <li>
-                <a href="./images/man.jpg" class="gallery__item">
-                  <div class="gallery__hover">Переглянути</div>
-                  <img
-                    src="./images/man.jpg"
-                    width="282"
-                    height="282"
-                    alt="photo"
-                  />
-                </a>
-              </li>
-              <li>
+              {% endfor %} {# Решта фото додаємо прихованими, щоб вони були у
+              lightbox #} {% for image in gallery.images | slice(8,
+              gallery.images.length) %}
+              <li style="display: none">
                 <a
-                  href="./images/horse-hiking-trips-desktop.jpg"
+                  href="{{ image.image }}"
                   class="gallery__item"
+                  data-lightbox="gallery"
                 >
                   <div class="gallery__hover">Переглянути</div>
                   <img
-                    src="./images/horse-hiking-trips-desktop.jpg"
+                    src="{{ image.image }}"
                     width="282"
                     height="282"
-                    alt="photo"
+                    alt="{{ image.alt | default: 'photo' }}"
                   />
                 </a>
               </li>
-              <li>
-                <a
-                  href="./images/eco-product-tasting-desktop.jpg"
-                  class="gallery__item"
-                >
-                  <div class="gallery__hover">Переглянути</div>
-                  <img
-                    src="./images/eco-product-tasting-desktop.jpg"
-                    width="282"
-                    height="282"
-                    alt="photo"
-                  />
-                </a>
-              </li>
-              <li>
-                <a href="./images/farm2.jpg" class="gallery__item">
-                  <div class="gallery__hover">Переглянути</div>
-                  <img
-                    src="./images/farm2.jpg"
-                    width="282"
-                    height="282"
-                    alt="photo"
-                  />
-                </a>
-              </li>
+              {% endfor %}
             </ul>
           </div>
         </section>
@@ -634,7 +586,11 @@
                   data-netlify="true"
                   netlify-honeypot="bot-field"
                 >
-                  <input type="hidden" name="form-name" value="dyke-pole-contacts" />
+                  <input
+                    type="hidden"
+                    name="form-name"
+                    value="dyke-pole-contacts"
+                  />
 
                   <div class="contact-section__form-field input">
                     <input
@@ -832,6 +788,31 @@
         </form>
       </div>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/simplelightbox@2.10.3/dist/simple-lightbox.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Ініціалізуємо лайтбокс для галереї
+        new SimpleLightbox(".gallery__item", {
+          captions: true,
+          captionsData: "alt",
+          captionDelay: 250,
+          nav: true,
+        });
+      });
+    </script>
+
+    <script>
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", (user) => {
+          if (!user) {
+            window.netlifyIdentity.on("login", () => {
+              document.location.href = "/admin/";
+            });
+          }
+        });
+      }
+    </script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.14.3/simple-lightbox.min.js"></script>
     <script>
