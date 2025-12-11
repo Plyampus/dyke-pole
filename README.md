@@ -1,72 +1,51 @@
-# Дике-поле
+# Dyke Pole Farm: Full Brand Identity & Website Development
 
-## Опис
-"Дике-поле" - це [короткий опис призначення проєкту]. Проєкт вирішує [яку проблему] для [цільової аудиторії].
+![Project Cover Image](https://github.com/Plyampus/dyke-pole/blob/main/assets/brand-website-design.jpg?raw=true)
 
-![Скріншот](screenshot.png)
+This project is a complete brand identity and promotional website for "Dyke Pole," a family eco-farm specializing in water buffalo breeding and organic products. The goal was to create a brand that evokes harmony, tradition, and hospitality, reflecting the connection between people and nature.
 
-## Функціонал
-- Функція 1: ...
-- Функція 2: ...
-- Особливість: ...
+---
 
-## Технології
-- Python 3.11
-- Django 4.x
-- PostgreSQL
-- Docker
+### ✨ Live Demo
 
-## Системні вимоги
-- ОС: Ubuntu 20.04+ / Windows 10+
-- Python 3.11+
-- Docker (опціонально)
+You can view the live version of the site here: **[dykepolefarm.netlify.app](https://dykepolefarm.netlify.app/)**
 
-## Встановлення
+---
 
+### 🎯 My Role & Project Scope
 
-## Запуск
+As this was a comprehensive solo project, I was responsible for the entire creative and technical process:
 
+*   **Brand Strategy:** Defining the core brand values (Harmony, Tradition, Hospitality) and character.
+*   **Logo & Brand Identity Design:** Creating the main logo (a deer head symbolizing nature and strength) and a complete visual system.
+*   **UI/UX Design:** Designing a user-friendly, responsive website that reflects the brand's natural and tranquil atmosphere.
+*   **Frontend Development:** Writing the HTML, SCSS, and JavaScript code to bring the design to life.
+*   **Deployment:** Publishing the final website on Netlify.
 
-## Приклади використання
+---
 
-- Для запуску сервера: `python manage.py runserver`
-- Для створення користувача: `python manage.py createsuperuser`
+### 🎨 The Design Process
 
-## Відомі проблеми
-- [Опис проблеми 1]
-- [Опис проблеми 2]
+#### 1. Brand Constants & Logo
+The brand is built on the core values of harmony with nature, respect for tradition, and warm hospitality. The logo, featuring a deer's head, symbolizes strength, grace, and the wild spirit of the farm.
 
-## Ліцензія
-MIT License
+![Logo Design](https://github.com/Plyampus/dyke-pole/blob/main/assets/brand-identity-logo-primary.png?raw=true)
 
-## Автори та контакти
-- Ім'я Прізвище - email@example.com
-- Telegram: @username
+#### 2. Website Design
+The website design uses natural colors, clean typography, and high-quality photography to create an immersive and calming user experience across all devices.
 
-## Changelog
-- v1.0 - перший реліз
+![Responsive Website Design](https://github.com/Plyampus/dyke-pole/blob/main/assets/dyke-pole-website-hero-section.jpg?raw=true)
 
-Структура README для проекту "Дике-поле"
-1. Назва та короткий опис проєкту
+#### 3. Social Media Presence
+The visual identity was extended to social media templates to ensure brand consistency across all platforms.
 
-Вкажіть назву проєкту ("Дике-поле") та коротко опишіть його призначення і основну ідею.
+![Instagram Mockups](https://github.com/Plyampus/dyke-pole/blob/main/assets/dyke-pole-brand-social-media.png?raw=true)
 
-Додайте скріншот чи GIF, якщо є інтерфейс або візуальні елементи.
+---
 
-2. Опис функціоналу
+### 🛠️ Technologies Used
 
-Перелічіть основні можливості проєкту.
-
-Вкажіть, які проблеми вирішує ваш продукт, чим він унікальний.
-
-3. Використані технології
-
-Перерахуйте мови програмування, бібліотеки, фреймворки та зовнішні сервіси, які використовуються у проєкті.
-
-4. Системні вимоги
-
-Вкажіть мінімальні вимоги до ОС, версії інтерпретатора, браузера, RAM, CPU тощо, якщо це важливо для запуску.
-
-5. Інструкція з встановлення
-
-Покроково опишіть, як встановити проєкт: які залежності потрібно встановити, які команди виконати.
+*   HTML5
+*   SCSS (Sass)
+*   JavaScript
+*   Netlify for deployment
