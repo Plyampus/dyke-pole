@@ -1,4 +1,4 @@
-# Dyke Pole Farm: Full Brand Identity & Website Development
+# Dyke Pole: Brand Identity & Website for a Deer Rancho
 
 ![Project Cover Image](https://github.com/Plyampus/dyke-pole/blob/main/assets/brand-website-design.jpg?raw=true)
 
